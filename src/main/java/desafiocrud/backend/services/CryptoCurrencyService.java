@@ -19,4 +19,9 @@ public class CryptoCurrencyService {
         postCC.setInclusionDate(new Date());
         return repository.save(postCC);
     }
+
+    public CryptoCurrency putCryptoCurrency(CryptoCurrency updateCC) {
+        updateCC.setUpdateDate(new Date());
+        return repository.save(updateCC);
+    }
 }
