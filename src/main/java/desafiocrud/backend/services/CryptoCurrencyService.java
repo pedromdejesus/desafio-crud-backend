@@ -26,8 +26,12 @@ public class CryptoCurrencyService {
         return repository.save(updateCC);
     }
 
-    public void deleteCryptoCurrency(int id) {
+    public void deleteCryptoCurrency(Integer id) {
         Optional<CryptoCurrency> cc = repository.findById(id);
         repository.delete(cc.get());
+    }
+
+    public List<CryptoCurrency> searchCryptoCurrencies(String keyword) {
+        return repository.search(keyword);
     }
 }
