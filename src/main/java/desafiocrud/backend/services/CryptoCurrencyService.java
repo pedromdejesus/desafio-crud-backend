@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 public class CryptoCurrencyService {
     @Autowired
@@ -23,5 +24,10 @@ public class CryptoCurrencyService {
     public CryptoCurrency putCryptoCurrency(CryptoCurrency updateCC) {
         updateCC.setUpdateDate(new Date());
         return repository.save(updateCC);
+    }
+
+    public void deleteCryptoCurrency(int id) {
+        Optional<CryptoCurrency> cc = repository.findById(id);
+        repository.delete(cc.get());
     }
 }
