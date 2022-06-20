@@ -11,27 +11,27 @@ Após a instalação e configuração de todos os itens listados anteriormente, 
 - Abrir o Command Line do MySQL.
 - Entrar com o password escolhido na configuração de instalação do MySQL.
 - Executar o seguinte script: 
-  CREATE DATABASE crypto_currencies_db;.
+  </br>CREATE DATABASE crypto_currencies_db;.
 - Para verificar o sucesso da criação do database, executar o seguinte script: 
-  SHOW databases;.
+  </br>SHOW databases;.
 
 Após a criação do database, abrir o projeto na IDE escolhida, configurar a opção de run da aplicação com a seleção da JDK 17, e rodar a aplicação.
 
 *Adendos:*
 Para mudar as configurações de conexão com a database, entrar no arquivo application.properties seguindo o seguinte path: 
-  desafio-crud/src/main/resources/application.properties
+  </br>desafio-crud/src/main/resources/application.properties
   
   - Script que determina a porta de conexão do database com a API.
-  spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/crypto_currencies_db?useTimezone=true&serverTimezone=UTC
+  </br>spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/crypto_currencies_db?useTimezone=true&serverTimezone=UTC
   
   - Script que determina o usuário do database.
-  spring.datasource.username=root
+  </br>spring.datasource.username=root
   
   - Script que determina a senha do database.
-  spring.datasource.password=123456
+  </br>spring.datasource.password=123456
   
   - Script que possibilita a criação e alteração do database.
-  spring.jpa.hibernate.ddl-auto=update
+  </br>spring.jpa.hibernate.ddl-auto=update
   
 Com a instalação opcional da API Cliente, segue a listagem dos endpoints da API para testes dos mesmos:
   - GET
