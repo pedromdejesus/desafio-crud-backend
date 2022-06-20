@@ -18,7 +18,7 @@ Após a instalação e configuração de todos os itens listados anteriormente, 
 Após a criação do database, abrir o projeto na IDE escolhida, configurar a opção de run da aplicação com a seleção da JDK 17, e rodar a aplicação.
 
 Adendos:
-Para mudar as configurações de conexão com a database, entrar no arquivo application.properties seguindo o seguinte path: 
+<br>Para mudar as configurações de conexão com a database, entrar no arquivo application.properties seguindo o seguinte path: 
   desafio-crud/src/main/resources/application.properties
   
   Script que determina a porta de conexão do database com a API.
