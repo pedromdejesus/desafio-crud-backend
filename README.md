@@ -12,14 +12,15 @@ Após a instalação e configuração de todos os itens listados anteriormente, 
 - Entrar com o password escolhido na configuração de instalação do MySQL.
 - Executar o seguinte script: 
   </br>CREATE DATABASE crypto_currencies_db;.
+  
 - Para verificar o sucesso da criação do database, executar o seguinte script: 
   </br>SHOW databases;.
 
 Após a criação do database, abrir o projeto na IDE escolhida, configurar a opção de run da aplicação com a seleção da JDK 17, e rodar a aplicação.
 
-*Adendos:*
+*Adendos:*</br>
 Para mudar as configurações de conexão com a database, entrar no arquivo application.properties seguindo o seguinte path: 
-  </br>desafio-crud/src/main/resources/application.properties
+  </br> desafio-crud/src/main/resources/application.properties
   
   - Script que determina a porta de conexão do database com a API.
   </br>spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/crypto_currencies_db?useTimezone=true&serverTimezone=UTC
@@ -33,18 +34,13 @@ Para mudar as configurações de conexão com a database, entrar no arquivo appl
   - Script que possibilita a criação e alteração do database.
   </br>spring.jpa.hibernate.ddl-auto=update
   
-Com a instalação opcional da API Cliente, segue a listagem dos endpoints da API para testes dos mesmos:
-  - GET
-    localhost:8080/cryptocurrencies
-  
-  - POST
-    localhost:8080/cryptocurrencies
+Com a instalação opcional da API Cliente, segue a listagem dos endpoints da API para testes dos mesmos:</br>
+  - GET localhost:8080/cryptocurrencies
  
-  - PUT
-    localhost:8080/cryptocurrencies
+  - POST localhost:8080/cryptocurrencies
+ 
+  - PUT localhost:8080/cryptocurrencies
   
-  - DELETE
-    localhost:8080/cryptocurrencies/{id}
+  - DELETE localhost:8080/cryptocurrencies/{id}
   
-  - SEARCH
-    localhost:8080/cryptocurrencies/search/?keyword={keyword}
+  - SEARCH localhost:8080/cryptocurrencies/search/?keyword={keyword}
