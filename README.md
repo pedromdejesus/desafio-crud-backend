@@ -18,7 +18,7 @@ Após a instalação e configuração de todos os itens listados anteriormente, 
 Após a criação do database, abrir o projeto na IDE escolhida, configurar a opção de run da aplicação com a seleção da JDK 17, e rodar a aplicação.
 
 Adendos:
-<br>Para mudar as configurações de conexão com a database, entrar no arquivo application.properties seguindo o seguinte path: 
+- Para mudar as configurações de conexão com a database, entrar no arquivo application.properties seguindo o seguinte path: 
   desafio-crud/src/main/resources/application.properties
   
   Script que determina a porta de conexão do database com a API.
@@ -34,17 +34,17 @@ Adendos:
   spring.jpa.hibernate.ddl-auto=update
   
  Com a instalação opcional da API Cliente, segue a listagem dos endpoints da API para testes dos mesmos:
-  GET
+ -GET
   localhost:8080/cryptocurrencies
   
-  POST
+ -POST
+  localhost:8080/cryptocurrencies
+ 
+ -PUT
   localhost:8080/cryptocurrencies
   
-  PUT
-  localhost:8080/cryptocurrencies
-  
-  DELETE
+ -DELETE
   localhost:8080/cryptocurrencies/{id}
   
-  SEARCH
+ -SEARCH
   localhost:8080/cryptocurrencies/search/?keyword={keyword}
