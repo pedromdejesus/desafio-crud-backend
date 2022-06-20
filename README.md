@@ -17,7 +17,7 @@ Após a instalação e configuração de todos os itens listados anteriormente, 
   </br>SHOW databases;.
 
 Após a criação do database, abrir o projeto na IDE escolhida, configurar a opção de run da aplicação com a seleção da JDK 17, e rodar a aplicação.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Para mudar as configurações de conexão com a database, entrar no arquivo application.properties seguindo o seguinte path: 
   </br> desafio-crud/src/main/resources/application.properties
   
