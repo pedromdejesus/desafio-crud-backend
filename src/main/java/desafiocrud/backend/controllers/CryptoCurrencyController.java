@@ -27,7 +27,7 @@ public class CryptoCurrencyController {
     public CryptoCurrency put(@RequestBody CryptoCurrency cc) { return service.putCryptoCurrency(cc); }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable("id") int id) { service.deleteCryptoCurrency(id); }
+    public void delete(@PathVariable("id") Integer id) { service.deleteCryptoCurrency(id); }
 
     @GetMapping("/search")
     public List<CryptoCurrency> search(@RequestParam String keyword) { return service.searchCryptoCurrencies(keyword); }

@@ -17,7 +17,7 @@ public class CryptoCurrency {
 
     private String description;
 
-    private float price;
+    private String price;
 
     private Date inclusionDate;
 
